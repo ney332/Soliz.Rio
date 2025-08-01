@@ -8,6 +8,13 @@
   <link rel="stylesheet" href="style2.css">
 
 </head>
+ <script>
+    function toggleMenu() {
+      const menu = document.getElementById('menuLateral');
+      menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex';
+    }
+    
+  </script>
 <body>
   <header>
     <div class="menu-icon" onclick="toggleMenu()">☰</div>
@@ -37,7 +44,9 @@
         <p class="preco-desconto">R$ 89,90</p>
       </div>
 
-      <button class="botao-comprar">Compre agora</button>
+      <a class="botao-comprar" href="https://api.whatsapp.com/send?phone=5521966773138&text=Ol%C3%A1%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es!"
+    aria-label="Converse conosco pelo WhatsApp"> Compre agora</a>
+      
     </div>
   </div>
 </body>

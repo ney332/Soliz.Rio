@@ -8,6 +8,13 @@
   <link rel="stylesheet" href="style2.css">
  
 </head>
+ <script>
+    function toggleMenu() {
+      const menu = document.getElementById('menuLateral');
+      menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex';
+    }
+    
+  </script>
 <body>
   <header>
     <div class="menu-icon" onclick="toggleMenu()">☰</div>
