@@ -19,7 +19,7 @@
 
     header {
       background-color: var(--rosa);
-      color: var(--branco);
+      color: #ffffff;
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -62,6 +62,8 @@
 
     .precos {
       margin-top: 1rem;
+      display: inline-block;
+      
     }
 
     .preco-original {
@@ -73,21 +75,26 @@
     .preco-desconto {
       color: #e91e63;
       font-weight: bold;
-      font-size: 1.3rem;
+      font-size: 1.4rem;
     }
 
     .botao-comprar {
       margin-top: 1.5rem;
       background-color: var(--rosa);
-      color: var(--branco);
+      color: black;
       border: none;
       padding: 1rem;
-      width: 100%;
+      width: 50%;
       font-size: 1rem;
       border-radius: 8px;
       cursor: pointer;
+      justify-content: center;
+      align-items: center;
+      margin-left:25% ;
+      
     }
 
     .botao-comprar:hover {
-      background-color: #ec407a;
+      background-color: #A77009;
+      color: #ffffff;
     }
