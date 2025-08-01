@@ -110,7 +110,7 @@
         grid-template-columns: repeat(4, 1fr);
       }
       .container{
-        margin: auto;
+        padding: 5px;
         width: 100%;
       }
       img{
@@ -121,6 +121,7 @@
         align-items: center;
         display: flex;
       }
+
     }
 
     .tituloproduto{
