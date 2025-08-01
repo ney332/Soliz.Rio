@@ -1,5 +1,5 @@
   :root {
-      --rosa: #ffffff;
+      --rosa: #A77009;
       --rosa-claro: #ffffff;
       --cinza: #666;
       --branco: #f3f1f1;
@@ -51,7 +51,7 @@
 
     .info-produto h1 {
       font-size: 1.5rem;
-      color: var(--rosa);
+      color: #302f2f;
       margin-bottom: 0.5rem;
     }
 
@@ -80,7 +80,7 @@
 
     .botao-comprar {
       margin-top: 1.5rem;
-      background-color: var(--rosa);
+      background-color: white;
       color: black;
       border: none;
       padding: 1rem;
@@ -91,6 +91,9 @@
       justify-content: center;
       align-items: center;
       margin-left:25% ;
+      box-shadow: 0 6px 6px rgba(0, 0, 0, 0.1);
+
+ 
       
     }
 
