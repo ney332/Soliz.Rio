@@ -4,104 +4,33 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Loja de Biquínis</title>
-  <style>
-    :root {
-      --rosa: #ffffff;
-      --rosa-claro: #ffffff;
-      --cinza: #666;
-      --branco: #f3f1f1;
-    }
+  <link rel="stylesheet" href="style.css">
 
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: sans-serif;
-    }
-
-    body {
-      background-color: var(--rosa-claro);
-    }
-
-    header {
-      background-color: var(--rosa);
-      color: var(--branco);
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 1rem;
-    }
-
-    .menu-icon, .cart-icon {
-      font-size: 1.5rem;
-      cursor: pointer;
-    }
-
-    .logo {
-      font-weight: bold;
-      font-size: 1.2rem;
-    }
-
-    .produtos {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 1rem;
-      padding: 1rem;
-    }
-
-    .card {
-      background-color: var(--branco);
-      border-radius: 8px;
-      overflow: hidden;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-      text-decoration: none;
-      color: inherit;
-    }
-
-    .card img {
-      width: 100%;
-      height: auto;
-    }
-
-    .descricao {
-      padding: 0.5rem;
-    }
-
-    .descricao p {
-      margin-bottom: 0.25rem;
-      color: var(--cinza);
-    }
-
-    .preco-original {
-      text-decoration: line-through;
-      color: #888;
-      font-size: 0.85rem;
-    }
-
-    .preco-desconto {
-      color: #e91e63;
-      font-weight: bold;
-    }
-
-    @media (min-width: 768px) {
-      .produtos {
-        grid-template-columns: repeat(4, 1fr);
-      }
-    }
-    .tituloproduto{
-        padding: 10px;
-    }
   </style>
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById('menuLateral');
+      menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex';
+    }
+  </script>
 </head>
 <body>
   <header>
-    <div class="menu-icon">☰</div>
+    <div class="menu-icon" onclick="toggleMenu()">☰</div>
     <div class="logo">logo</div>
-    <div class="cart-icon"><a href="./index.html"><img width="24" height="24" src="https://img.icons8.com/material-sharp/24/home.png" alt="home"/></a></div>
+    <div class="cart-icon">
+      <a href="./index.html">
+        <img width="24" height="24" src="https://img.icons8.com/material-sharp/24/home.png" alt="home"/>
+      </a>
+    </div>
+    <div id="menuLateral" class="menu-lateral">
+      <a href="#">Produtos</a>
+      <a href="#">Sobre</a>
+      <a href="#">Endereço</a>
+    </div>
   </header>
   <div class="tituloproduto"><h3>Produtos</h3></div>
   <section class="produtos">
-    
     <a href="produto1.html" class="card">
       <img src="./img/images (1).jfif" alt="Biquíni 1">
       <div class="descricao">
@@ -110,7 +39,6 @@
         <p class="preco-desconto">R$ 89,90</p>
       </div>
     </a>
-
     <a href="produto2.html" class="card">
       <img src="./img/images (1).jfif" alt="Biquíni 2">
       <div class="descricao">
@@ -119,7 +47,7 @@
         <p class="preco-desconto">R$ 95,90</p>
       </div>
     </a>
-     <a href="produto1.html" class="card">
+    <a href="produto1.html" class="card">
       <img src="./img/images (1).jfif" alt="Biquíni 1">
       <div class="descricao">
         <p>Biquíni Rosa Floral</p>
@@ -127,7 +55,6 @@
         <p class="preco-desconto">R$ 89,90</p>
       </div>
     </a>
-
     <a href="produto2.html" class="card">
       <img src="./img/images (1).jfif" alt="Biquíni 2">
       <div class="descricao">
@@ -136,7 +63,7 @@
         <p class="preco-desconto">R$ 95,90</p>
       </div>
     </a>
-     <a href="produto1.html" class="card">
+    <a href="produto1.html" class="card">
       <img src="./img/images (1).jfif" alt="Biquíni 1">
       <div class="descricao">
         <p>Biquíni Rosa Floral</p>
@@ -144,7 +71,6 @@
         <p class="preco-desconto">R$ 89,90</p>
       </div>
     </a>
-
     <a href="produto2.html" class="card">
       <img src="./img/images (1).jfif" alt="Biquíni 2">
       <div class="descricao">

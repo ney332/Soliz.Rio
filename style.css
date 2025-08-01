@@ -1,0 +1,115 @@
+ :root {
+      --rosa: #ffffff;
+      --rosa-claro: #ffffff;
+      --cinza: #000000;
+      --branco: #f3f1f1;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: sans-serif;
+    }
+
+    body {
+      background-color: var(--rosa-claro);
+    }
+
+    header {
+      background-color: var(--rosa);
+      color: var(--branco);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem;
+      position: relative;
+    }
+
+    .menu-icon, .cart-icon {
+      font-size: 1.5rem;
+      cursor: pointer;
+    }
+
+    .logo {
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+
+    .menu-lateral {
+      display: none;
+      flex-direction: column;
+      background-color: var(--branco);
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 200px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+      z-index: 100;
+    }
+
+    .menu-lateral a {
+      padding: 1rem;
+      border-bottom: 1px solid #ccc;
+      text-decoration: none;
+      color: var(--cinza);
+      background-color: var(--branco);
+    }
+
+    .menu-lateral a:hover {
+      background-color: #eee;
+    }
+
+    .produtos {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+      padding: 1rem;
+    }
+
+    .card {
+      background-color: var(--branco);
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+    }
+    .menu-icon, .logo{
+        color: #000000;
+    }
+
+    .descricao {
+      padding: 0.5rem;
+    }
+
+    .descricao p {
+      margin-bottom: 0.25rem;
+      color: var(--cinza);
+    }
+
+    .preco-original {
+      text-decoration: line-through;
+      color: #888;
+      font-size: 0.85rem;
+    }
+
+    .preco-desconto {
+      color: #e91e63;
+      font-weight: bold;
+    }
+
+    @media (min-width: 768px) {
+      .produtos {
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
+
+    .tituloproduto{
+      padding: 10px;
+    }
