@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>bqn</title>
+  <style>
+    :root {
+      --rosa: #ffffff;
+      --rosa-claro: #ffffff;
+      --cinza: #666;
+      --branco: #f3f1f1;
+    }
+
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: sans-serif;
+    }
+
+    body {
+      background-color: var(--rosa-claro);
+    }
+
+    header {
+      background-color: var(--rosa);
+      color: var(--branco);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem;
+    }
+
+    .menu-icon, .cart-icon {
+      font-size: 1.5rem;
+      cursor: pointer;
+    }
+
+    .logo {
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+
+    .container {
+      padding: 1rem;
+    }
+
+    .imagem-produto {
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    .info-produto {
+      margin-top: 1rem;
+    }
+
+    .info-produto h1 {
+      font-size: 1.5rem;
+      color: var(--rosa);
+      margin-bottom: 0.5rem;
+    }
+
+    .info-produto p {
+      color: var(--cinza);
+      margin-bottom: 0.5rem;
+    }
+
+    .precos {
+      margin-top: 1rem;
+    }
+
+    .preco-original {
+      text-decoration: line-through;
+      color: #888;
+      font-size: 1rem;
+    }
+
+    .preco-desconto {
+      color: #e91e63;
+      font-weight: bold;
+      font-size: 1.3rem;
+    }
+
+    .botao-comprar {
+      margin-top: 1.5rem;
+      background-color: var(--rosa);
+      color: var(--branco);
+      border: none;
+      padding: 1rem;
+      width: 100%;
+      font-size: 1rem;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    .botao-comprar:hover {
+      background-color: #ec407a;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="menu-icon">☰</div>
+    <div class="logo">logo</div>
+    <div class="cart-icon"><a href="./index.html"><img width="24" height="24" src="https://img.icons8.com/material-sharp/24/home.png" alt="home"/></a></div>
+  </header>
+
+  <div class="container">
+    <img src="./img/images (1).jfif" alt="Biquíni Rosa Floral" class="imagem-produto"/>
+    
+    <div class="info-produto">
+      <h1>Biquíni Rosa Floral</h1>
+      <p>Conjunto de biquíni com estampa floral em tons de rosa. Tecido leve, confortável e resistente ao cloro. Ideal para dias ensolarados na praia ou piscina.</p>
+
+      <div class="precos">
+        <p class="preco-original">R$ 120,00</p>
+        <p class="preco-desconto">R$ 89,90</p>
+      </div>
+
+      <button class="botao-comprar">Compre agora</button>
+    </div>
+  </div>
+</body>
+</html>
